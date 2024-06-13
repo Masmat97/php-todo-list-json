@@ -3,25 +3,27 @@
 $friends = [
      [
         'name' => 'Luca',
-        'last name' => 'Rossi'
+        'last_name' => 'Rossi'
      ],
      [
         'name' => 'Antonio',
-        'last name' => 'Bianchi'
+        'last_name' => 'Bianchi'
      ],
      [
         'name' => 'Giuseppe',
-        'last name' => 'Verdi'
+        'last_name' => 'Verdi'
      ],
      [
         'name' => 'Cristoforo',
-        'last name' => 'Colombo'
+        'last_name' => 'Colombo'
      ],
      [
         'name' => 'Simone',
-        'last name' => 'Esposito'
+        'last_name' => 'Esposito'
      ],
 ];
-// header('Content-Type: application/json');
+header('Content-Type: application/json');
 
-echo json_encode($friends);
+$jsonString = json_encode($friends);
+
+echo $jsonString;
